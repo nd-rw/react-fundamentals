@@ -39,7 +39,7 @@
 ## System Requirements
 
 - [git][git] v2.13 or greater
-- [NodeJS][node] `^10.13 || 12 || 14`
+- [NodeJS][node] v10.13 or greater
 - [npm][npm] v6 or greater
 
 All of these must be available in your `PATH`. To verify things are set up
@@ -57,45 +57,28 @@ variable and how to fix it here for [windows][win-path] or
 
 ## Setup
 
-> If you want to commit and push your work as you go, you'll want to
-> [fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
-> first and then clone your fork rather than this repo directly.
-
 After you've made sure to have the correct things (and versions) installed, you
 should be able to just run a few commands to get set up:
 
 ```
 git clone https://github.com/kentcdodds/react-fundamentals.git
 cd react-fundamentals
-node setup
+npm run setup --silent
 ```
 
 This may take a few minutes. **It will ask you for your email.** This is
 optional and just automatically adds your email to the links in the project to
 make filling out some forms easier.
 
-A few common issues during `node setup` have involved PATH variables (above
-links or [here](https://github.com/kentcdodds/react-fundamentals/issues/27)),
+A few common issues during `npm run setup --silent` have involved PATH variables
+(above links or
+[here](https://github.com/kentcdodds/react-fundamentals/issues/27)),
 reinstalling git, node, or npm, and clearing npm caches.
 
 If you get any errors, please read through them and see if you can find out what
 the problem is. If you can't work it out on your own then please [file an
 issue][issue] and provide _all_ the output from the commands you ran (even if
 it's a lot).
-
-If you can't get the setup script to work, then just make sure you have the
-right versions of the requirements listed above, and run the following commands:
-
-```
-npm install
-npm run validate
-```
-
-It's recommended you run everything locally in the same environment you work in
-every day, but if you're having issues getting things set up, you can also set
-this up using [GitHub Codespaces](https://github.com/features/codespaces)
-([video demo](https://www.youtube.com/watch?v=gCoVJm3hGk4)) or
-[Codesandbox](https://codesandbox.io/s/github/kentcdodds/react-fundamentals).
 
 ## Running the app
 
@@ -201,11 +184,7 @@ Thanks goes to these wonderful people
     <td align="center"><a href="https://github.com/rodrigofuentes"><img src="https://avatars1.githubusercontent.com/u/7374840?v=4" width="100px;" alt=""/><br /><sub><b>Rodrigo Fuentes</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=rodrigofuentes" title="Documentation">📖</a></td>
     <td align="center"><a href="https://magrippis.com"><img src="https://avatars0.githubusercontent.com/u/3502800?v=4" width="100px;" alt=""/><br /><sub><b>Johnny Magrippis</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=jmagrippis" title="Code">💻</a></td>
     <td align="center"><a href="http://acharyaroshan.com.np"><img src="https://avatars2.githubusercontent.com/u/56434316?v=4" width="100px;" alt=""/><br /><sub><b>Roshan Acharya</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=coderosh" title="Documentation">📖</a></td>
-    <td align="center"><a href="https://github.com/decisa"><img src="https://avatars0.githubusercontent.com/u/35339760?v=4" width="100px;" alt=""/><br /><sub><b>Art Telesh</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=decisa" title="Documentation">📖</a> <a href="https://github.com/kentcdodds/react-fundamentals/commits?author=decisa" title="Code">💻</a></td>
-  </tr>
-  <tr>
-    <td align="center"><a href="https://github.com/merodiro"><img src="https://avatars1.githubusercontent.com/u/17033502?v=4" width="100px;" alt=""/><br /><sub><b>Amr A.Mohammed</b></sub></a><br /><a href="#ideas-merodiro" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="https://github.com/DRS90"><img src="https://avatars1.githubusercontent.com/u/22821570?v=4" width="100px;" alt=""/><br /><sub><b>Douglas</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=DRS90" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/decisa"><img src="https://avatars0.githubusercontent.com/u/35339760?v=4" width="100px;" alt=""/><br /><sub><b>Art Telesh</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=decisa" title="Documentation">📖</a></td>
   </tr>
 </table>
 
@@ -230,7 +209,7 @@ Thank you! https://kcd.im/rf-ws-feedback
 [node]: https://nodejs.org
 [git]: https://git-scm.com/
 [build-badge]: https://img.shields.io/travis/kentcdodds/react-fundamentals.svg?style=flat-square&logo=travis
-[build]: https://travis-ci.com/kentcdodds/react-fundamentals
+[build]: https://travis-ci.org/kentcdodds/react-fundamentals
 [license-badge]: https://img.shields.io/badge/license-GPL%203.0%20License-blue.svg?style=flat-square
 [license]: https://github.com/kentcdodds/react-fundamentals/blob/main/LICENSE
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
