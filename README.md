@@ -83,6 +83,14 @@ the problem is. If you can't work it out on your own then please [file an
 issue][issue] and provide _all_ the output from the commands you ran (even if
 it's a lot).
 
+If you can't get the setup script to work, then just make sure you have the
+right versions of the requirements listed above, and run the following commands:
+
+```
+npm install
+npm run validate
+```
+
 It's recommended you run everything locally in the same environment you work in
 every day, but if you're having issues getting things set up, you can also set
 this up using [GitHub Codespaces](https://github.com/features/codespaces)
@@ -197,6 +205,7 @@ Thanks goes to these wonderful people
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/merodiro"><img src="https://avatars1.githubusercontent.com/u/17033502?v=4" width="100px;" alt=""/><br /><sub><b>Amr A.Mohammed</b></sub></a><br /><a href="#ideas-merodiro" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/DRS90"><img src="https://avatars1.githubusercontent.com/u/22821570?v=4" width="100px;" alt=""/><br /><sub><b>Douglas</b></sub></a><br /><a href="https://github.com/kentcdodds/react-fundamentals/commits?author=DRS90" title="Documentation">📖</a></td>
   </tr>
 </table>
 
