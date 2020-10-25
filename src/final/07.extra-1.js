@@ -6,10 +6,10 @@ import React from 'react'
 
 function FocusDemo() {
   const [items, setItems] = React.useState([
-    {id: 'apple', value: '🍎 apple'},
-    {id: 'orange', value: '🍊 orange'},
-    {id: 'grape', value: '🍇 grape'},
-    {id: 'pear', value: '🍐 pear'},
+    {id: 'a', value: 'apple'},
+    {id: 'o', value: 'orange'},
+    {id: 'g', value: 'grape'},
+    {id: 'p', value: 'pear'},
   ])
 
   React.useEffect(() => {
@@ -30,22 +30,17 @@ function FocusDemo() {
   }
 
   return (
-    <div className="keys">
+    <div>
       <div>
         <h1>Without a key</h1>
         {items.map(item => (
-          <input
-            className={`${item.id}-input`}
-            value={item.value}
-            onChange={getChangeHandler(item)}
-          />
+          <input value={item.value} onChange={getChangeHandler(item)} />
         ))}
       </div>
       <div>
         <h1>With array index as key</h1>
         {items.map((item, index) => (
           <input
-            className={`${item.id}-input`}
             key={index}
             value={item.value}
             onChange={getChangeHandler(item)}
@@ -56,7 +51,6 @@ function FocusDemo() {
         <h1>With a Proper Key</h1>
         {items.map(item => (
           <input
-            className={`${item.id}-input`}
             key={item.id}
             value={item.value}
             onChange={getChangeHandler(item)}
